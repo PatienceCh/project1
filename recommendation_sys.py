@@ -19,7 +19,7 @@ st.sidebar.header("SUBJECT MARK ENTRY FORM")
 
 
 # load data
-data = pickle.load(open('Student_Records.sav','rb'))
+data = pd.read_csv("Student_Records.csv")
 
 # creating a matrix of students and subjects 
 student_subject_matrix = data.pivot_table(
